@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+
+.appHeader{
+    padding: 20px 0 ;
+    text-align: center;
+    &__logo{
+        margin: auto;
+        width: 54px;
+        height: 66px;
+        background: url($img-root + 'h4s.svg') no-repeat;
+        background-size:contain ;
+    }
+}
