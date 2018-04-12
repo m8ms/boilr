@@ -5,13 +5,3 @@
 $font-root: '../fonts/';
 
 
-@font-face {
-    font-family: 'Elenar Love';
-    src: url($font-root + 'ElenarLove-Regular.eot');
-    src: url($font-root + 'ElenarLove-Regular.eot?#iefix') format('embedded-opentype'),
-    url($font-root + 'ElenarLove-Regular.woff2') format('woff2'),
-    url($font-root + 'ElenarLove-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-

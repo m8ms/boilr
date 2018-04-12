@@ -2,15 +2,31 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
+.appHeader {
+  height: .75rem;
+  overflow: visible;
+  border-bottom: 1px dashed $color-mid-grey;
 
-.appHeader{
-    padding: 20px 0 ;
-    text-align: center;
-    &__logo{
-        margin: auto;
-        width: 54px;
-        height: 66px;
-        background: url($img-root + 'h4s.svg') no-repeat;
-        background-size:contain ;
+  font-family: $header-font-stack;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  text-align: center;
+
+  &__logo {
+    display: inline-block;
+    padding: 0 1rem;
+    background: $color-background;
+    color: $color-mid-grey;
+
+    span {
+      &:nth-of-type(1){
+        color: red;
+      }
+
+      &:nth-of-type(2){
+        color: white;
+      }
     }
+  }
 }

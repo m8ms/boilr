@@ -1,7 +1,7 @@
 {
-  "name": "helium-4-ux-boilerplate",
+  "name": "helium-4-ux-polandball",
   "version": "1.0.0",
-  "description": "Helium-4 UX boilerplate",
+  "description": "Polandball",
   "main": "dist/app.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/m8ms/boilerplate.git"
+    "url": "https://github.com/m8ms/polandball.git"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +17,7 @@
   "bugs": {
     "url": ""
   },
-  "homepage": "https://github.com/m8ms/boilerplate#readme",
+  "homepage": "https://github.com/m8ms/polandball#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.2",
@@ -40,6 +40,7 @@
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "stylelint": "^9.2.0",
+    "stylelint-config-property-sort-order-smacss": "^3.0.1",
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-scss": "^3.0.0",
     "stylelint-webpack-plugin": "^0.10.4",
