@@ -32,3 +32,24 @@
   }
 }
 
+/// Make a triangle 'arrow' on ::before, pointing up
+/// @param {number} $size
+@mixin up-arrow($size: 5px) {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -$size;
+    width: 0;
+    height: 0;
+    border-right: $size solid transparent;
+    border-bottom: $size solid $color-dark-grey;
+    border-left: $size solid transparent;
+    @content;
+  }
+}
+
+
+

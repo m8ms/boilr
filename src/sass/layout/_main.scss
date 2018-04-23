@@ -4,10 +4,14 @@
 
 
 body {
-  padding: 1rem;
-  text-align: center;
+  padding: 1rem 1.5rem;
 }
 
 #app {
-  margin-top: 2rem;
+  max-width: 960px;
+  margin: 0 auto ;
+}
+
+.appContent {
+  margin-top: 1.5rem
 }

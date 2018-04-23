@@ -8,6 +8,7 @@
     "rules": {
         "eol-last": 2,
         "max-len": [2, 120, 4],
+        "no-console":  ["warn", { "allow": ["error"] }],
         "no-underscore-dangle": [0],
         "no-var": 2,
         "no-unused-vars": 1,
