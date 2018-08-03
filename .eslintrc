@@ -31,6 +31,9 @@
         }],
         "strict": [2, "global"]
     },
+    "globals": {
+        "__": true
+    },
     "plugins": [
         "react"
     ]

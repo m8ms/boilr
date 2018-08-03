@@ -1,20 +1,16 @@
-const config = require('./webpack.common.config');
-const StyleLintPlugin = require('stylelint-webpack-plugin');
+const configs = require('./webpack.common.config');
 
-console.log(__dirname + '/src/sass/stylelint.config.js');
+for (const config of configs) {
 
-config.plugins.unshift(
-    new StyleLintPlugin({
-        configFile: __dirname + '/src/sass/stylelint.config.js'
-    }));
-
-config.devServer = {
-    contentBase: __dirname + '/dist',
+    config.devServer = {
+        port: 8081,
+        contentBase: __dirname + '/dist/' + config.name,
         historyApiFallback: true,
-        publicPath: '/',
+        publicPath: '/' + config.name,
         headers: {
-        'Access-Control-Allow-Origin': '*'
-    }
-};
+            'Access-Control-Allow-Origin': '*'
+        }
+    };
+}
 
-module.exports = config;
+module.exports = configs;
