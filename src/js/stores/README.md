@@ -1,3 +1,0 @@
-# Stores
-
-Flux data stores

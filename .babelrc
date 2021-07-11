@@ -1,7 +1,4 @@
 {
-  "presets": [
-    "env",
-    "react",
-    "stage-2"
-  ]
+  "presets": ["next/babel"],
+  "plugins": ["inline-react-svg", ["styled-components", { "ssr": true }]]
 }
